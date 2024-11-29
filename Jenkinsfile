@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
+                echo "---------------------cloning repo -----------------------"
                 git branch: 'main', url: 'https://github.com/trilok-dev/model_build.git'
             }
         }
