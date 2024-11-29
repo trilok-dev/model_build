@@ -1,12 +1,12 @@
 pipeline {
     agent any
     environment {
-        PYTHON_ENV = 'C:\\Python39\\python.exe' // Update with your Python path
+        PYTHON_ENV = 'C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe' // Update with your Python path
     }
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/<your-repo>.git'
+                git branch: 'main', url: 'https://github.com/trilok-dev/model_build.git'
             }
         }
         stage('Check & Install Dependencies') {
