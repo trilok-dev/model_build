@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        PYTHON_ENV = 'C:\Users\Administrator\AppData\Local\Programs\Python\Python313\python.exe' // Update with your Python path
+        PYTHON_ENV = 'C:/Users/Administrator/AppData/Local/Programs/Python/Python313/python.exe' // Update with your Python path
     }
     stages {
         stage('Clone Repository') {
