@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent  { label 'windows-agent' }
     environment {
         PYTHON_ENV = 'C:/Users/Administrator/AppData/Local/Programs/Python/Python313/python.exe' // Update with your Python path
     }
